@@ -18,7 +18,7 @@ public class OperaTest {
     
     @BeforeAll
     public static void setUpDriver(){
-        System.setProperty("webdriver.opera.driver", "resources/operadriver.exe");
+        System.setProperty("webdriver.opera.driver", "resources/operadriver");
         OperaOptions operaOptions = new OperaOptions();
         operaOptions.addArguments("--headless");
         driver = new OperaDriver(operaOptions);
